@@ -58,8 +58,7 @@ const loginSchema = Joi.object({
     .required()
     .email({ minDomainSegments: 2 }),
   password: Joi.string()
-    .pattern(/^[a-zA-Z0-9]{6,255}$/)
-    .min(6)
+    .min(1)
     .max(255)
     .required(),
 });
