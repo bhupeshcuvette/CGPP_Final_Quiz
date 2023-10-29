@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.analyticsContent {
+  width: calc(100vw - 300px);
+  height: 100vh;
+  background-color: #ededed;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.analyticsContent .heading {
+  color: #5076ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 60px 0;
+}
+.quizRows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  max-width: 1124px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #5076ff;
+  color: #ffffff;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+th:last-child,
+td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+td {
+  font-weight: bolder;
+}
+
+tr:nth-child(even) {
+  background-color: #b3c4ff;
+}
+
+.deleteQuizModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 94px;
+  box-sizing: border-box;
+}
+
+.deleteQuizModal .heading {
+  color: #474444 !important;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 39px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px 82px;
+}
+
+.deleteQuizModal .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 42px;
+  width: 100%;
+}
+
+.deleteQuizModal .buttons button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 284px !important;
+  height: 46px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.deleteQuizModal .buttons .delete_btn {
+  color: #fff;
+  background: #ff4b4b;
+  margin-right: 84px;
+}
+
+.deleteQuizModal .buttons .cancel_btn {
+  color: #474444;
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
