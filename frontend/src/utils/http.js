@@ -7,7 +7,7 @@ const getToken = () => {
 };
 
 const instance = axios.create({
-  baseURL: "http://localhost:3333/api",
+  baseURL: "https://final-five-plum.vercel.app/api",
   headers: {
     "auth-token": getToken(),
   },
